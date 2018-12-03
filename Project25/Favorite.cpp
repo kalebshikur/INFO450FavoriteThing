@@ -1,7 +1,8 @@
-
+#include "Array.h"
 #include<iostream>
 #include "Favorite.h"
 #include<string>
+#include<string.h>
 using namespace std;
 
 // favorite class constructor
@@ -21,6 +22,7 @@ void Favorite ::welcomeInfo() {
 void Favorite::newFavorite() {
 	cout << "Enter the name of the show" << endl;
 	getline(cin,name);
+
 	cout << "Enter the network of the show" << endl;
 	getline(cin,network);
 	cout << "Enter the lead character" << endl;
@@ -31,6 +33,19 @@ void Favorite::newFavorite() {
 	cin >> noSeason;
 	cin.ignore();
 	cin.clear();
+}
+
+//
+ostream& operator==(ostream &o,Favorite& n)
+{
+	bool repeat = true;
+	for (int i = 0; i < 20; i++)
+	{
+		if (n.name == n.name) {
+			repeat = false;
+		}
+	}
+	return o;
 }
 
 // setters and gatters

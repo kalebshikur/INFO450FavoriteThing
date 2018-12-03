@@ -14,5 +14,6 @@ public:
 	Array();
 	void addItem();
 	void printList();
+
 };
 

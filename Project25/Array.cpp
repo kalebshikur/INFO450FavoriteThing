@@ -17,6 +17,7 @@ void Array:: addItem()
 
 	numItems++;
 }
+
  // this function prints out the list
 void Array::printList()
 {

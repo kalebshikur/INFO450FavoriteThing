@@ -16,6 +16,7 @@ private:
 	string genre;
 public:
 	// favorite constructor declaration
+	friend ostream& operator==(ostream &o, Favorite& n);
 	Favorite();
 	void welcomeInfo();
 	void newFavorite();
